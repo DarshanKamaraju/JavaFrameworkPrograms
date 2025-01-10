@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean class="com.kodnest.SpringExample.SpringProject7Autowiring.Car" id="cr" autowire="byType">
+ </bean>
+<bean class="com.kodnest.SpringExample.SpringProject7Autowiring.Engine" id="en"> 
+   <property name="engineNo" value="1124"></property>
+   <property name="engineType" value="Petrol"></property>
+   </bean>
+   
+   
+</beans>

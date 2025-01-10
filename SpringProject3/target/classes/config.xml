@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<!-- setter Injection -->
+<bean class="com.kodnest.SpringExample.SpringProject3.Laptop" id="lapbean1"> 
+   <property name="srNo" value="1213"></property>
+   <property name="brand" value="HP"></property>
+   <property name="cost" value="9876.54F"></property>
+   </bean>
+   
+<!-- constructor injection -->
+<bean class="com.kodnest.SpringExample.SpringProject3.Laptop" id="lapbean2"> 
+   <constructor-arg value="1416"></constructor-arg>
+   <constructor-arg value="Dell"></constructor-arg>
+   <constructor-arg value="88776.37"></constructor-arg>
+   </bean>
+
+
+</beans>

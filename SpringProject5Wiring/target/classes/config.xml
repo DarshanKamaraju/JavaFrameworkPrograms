@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean class="com.kodnest.SpringExample.SpringProject5Wiring.CompanyXYZ" id="cmp">
+<property name="e" ref="emp2"></property>
+</bean>
+
+<bean class="com.kodnest.SpringExample.SpringProject5Wiring.Employee" id="emp1"> 
+   <property name="empID" value="12"></property>
+   <property name="empName" value="Harish"></property>
+   <property name="empSalary" value="98885"></property>
+   </bean>
+
+<bean class="com.kodnest.SpringExample.SpringProject5Wiring.Employee" id="emp2"> 
+   <property name="empID" value="13"></property>
+   <property name="empName" value="Arun"></property>
+   <property name="empSalary" value="99995"></property>
+   </bean>
+
+
+</beans>
